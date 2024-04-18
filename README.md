@@ -2,7 +2,8 @@
 
 Mingobot is a chatbot developed using Rasa NLU (Natural Language Understanding) and deployed on the Telegram messaging platform. It is designed to provide information and answer questions regarding Moringa School's data science program. It serves as a helpful resource for prospective students, current learners, and anyone interested in understanding the program's details. Mingobot employs natural language processing techniques to provide accurate and informative responses, making it a valuable tool for those exploring the world of data science education.
 
-![newMingo](https://github.com/kithinji007/MingoBot/assets/122665283/585ff0ab-b6ed-4f65-81ec-812dac76f75e)
+<img width="439" alt="Screenshot 2024-04-18 211555" src="https://github.com/IvyKemunto/MingoBot/assets/167242964/5a2e673a-06ff-4700-9138-ac335313f23b">
+
 
 **Key Features:**
 - Answers common questions about Moringa School's data science program.
@@ -139,7 +140,8 @@ Mingobot's features are designed to make the process of gathering information ab
 
 # Mingobot Flowchart
 
-<img width="1280" alt="chart2" src="https://github.com/kithinji007/MingoBot/assets/122665283/94de6fa6-c9b0-4b0a-a526-eef48bbdcb52">
+<img width="700" alt="Screenshot 2024-04-18 211816" src="https://github.com/IvyKemunto/MingoBot/assets/167242964/bdb40681-69a5-48c5-a069-ed9528dc8703">
+
 
 This flow ensures a smooth and effective interaction between students and the MingoBot, allowing them to obtain the information they need about the data science program in a user-friendly manner.
 
@@ -149,22 +151,25 @@ To give you a visual representation of Mingobot in action, here are some video d
 
 ### Screenshot 1: Asking a Question
 
-![IMG-6442](https://github.com/kithinji007/MingoBot/assets/122665283/7169a932-78a6-4715-8bb4-988a58b49e81)
+<img width="244" alt="mingobot in action" src="https://github.com/IvyKemunto/MingoBot/assets/167242964/2294e55f-8757-40dd-970b-31365c9dd203">
+
 
 *Description: A user asking a question about Moringa School's data science program and Mingobot providing a detailed response to a user's question.*
 
 ### Demo: A Brief Interaction
 
-https://github.com/kithinji007/MingoBot/assets/122665283/bd09e2d7-06f1-407b-b56d-0da01e653379
 
-https://github.com/kithinji007/MingoBot/assets/122665283/6863801b-ee6d-412a-ab5d-7544050c349d
 
-The above screenshot and videos show user interactions with mingobot.
+https://github.com/IvyKemunto/MingoBot/assets/167242964/80a5fac5-ccc9-4c8a-be3a-621a7c790361
+
+https://github.com/IvyKemunto/MingoBot/assets/167242964/ddecd240-8445-4617-9a9c-8c4978d4df15
+
+
+
+The above videos show user interactions with mingobot.
 
 # Conclusion 
 Moringa School is an institution which is very big on matters of feedback. MingoBot is a solution that enhances this two-way communication channel, in a split of a second. Being readily available, to provide consistent assistance to current students, potential students, parents and other interested parties is very vital. 
 Having MingoBot be easily accessible on Telegram messaging platform, enhances its usability, while continuously monitoring and improving it, to ensure that it remains relevant and effective. 
 The ultimate goal is to create a chatbot that acts as a reliable, efficient, and engaging communication support tool, that will enrich the educational experience and facilitate smooth school operations.
 
-code<a
-href="https://github.com/IvyKemas">Ivy's Github link</a>

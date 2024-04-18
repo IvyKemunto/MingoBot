@@ -1,0 +1,131 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - bot_challenge
+
+  - faq_application
+  - faq_course_content
+  - faq_financial_aid
+  - faq_learning_mode
+  - faq_duration
+  - faq_course_preriquisites
+  - faq_hardware_requirement
+  - faq_cost
+  - faq_deferment
+  - faq_payment
+  
+  
+
+  - faq_Moringa
+  - faq_admission_timelines
+  - faq_accomodation
+  - faq_location
+  - faq_capstone_project
+  - faq_career_opportunities
+
+
+  - faq_certificate
+  - faq_contact_us
+
+  - outofscope
+
+
+responses:
+  utter_greet:
+  - text: "Hey There🤗,I am Mingobot, Moringa's conversational AI.\nI answer your questions on:\n1.Admission guidelines'\n2.Scholarships\n3.Installment Options\n4.Learning modes: Part-time and full time.\nI am smart enough to understand your questions so just ask ahead"
+
+  utter_goodbye:
+  - text:  "Thank you for contacting Moringa,I hope I was able to assist you today. GoodBye!"
+
+  utter_bot_challenge:
+  - text: "I am a bot owned and trained by Mingobots. Here to help you on anything pertaining Moringa's Data Science course."
+
+  utter_faq_application:
+  - text: "We would be delighted to assist you with your application. To get started please visit our website and fill out the online application form.\n[Full Time Data Science](https://moringaschool.com/courses/data-science-course/)\n[Hybrid](https://moringaschool.com/courses/data-science-full-time-hybrid/)\n[Part Time](https://moringaschool.com/courses/data-science-course-part-time/)\nIf you have any questions or need help along the way,do not hesitate to reach out. We are here to support you on your journey to joining Moringa"
+
+  utter_faq_course_content:
+  - text: "In our data science program, you will find a rich and diverse curriculum that covers a wide range of topics essential to becoming a proficient data scientist.\nThe program typically comprises multiple modules, each focusing on specific aspects of data science.\nYou will delve into data analysis techniques, programming languages like Python and database managemnt systems like SQL, machine learning algorithms, statistical methods, and data visualization tools.\nStudents are also exposed to database systems, big data technologies, and natural language processing. The Data Science course has six phases, which is a mix of lectures, labs, and assignments to provide a well-rounded learning experience. Please follow the link to view our detailed [brochure](https://moringaschool.com/wp-content/uploads/2021/08/Data-science-WEB.pdf)"
+
+  utter_faq_financial_aid:
+  - text: "Moringa strives to make Quality Education Accessible to All through financial and academic support. It has partnered with Mastercard Foundation to bring to you the Access Program. The Access Program is a scholarship program for youth from low-income backgrounds. Apply [here](https://moringaschool.com/financial-aid/)\n\nMoringa has partnered with Aspira to make tuition fee access easier for you. Students and alumni of Moringa can now apply for a low-interest-based loan with zero application fees to finance their tuition fees.\nMore information on Soma Student loan, follow this [link](https://moringaschool.com/soma-student-loan/)"
+
+  utter_faq_learning_mode:
+  - text: "Moringa school offers flexible learning modes to accommodate all students. \nData Science Full-time Hybrid: In-person & Online | Mon to Fri from 8am to 5pm.\nData Science Part-time: Live & Online | Mon to Fri from 6pm to 9pm |Saturdays from 9am to 6pm.\nFor more information, please visit the following links:\n [Data Science Course](https://moringaschool.com/courses/data-science-course/)\n[Data Science Full-time Hybrid](https://moringaschool.com/courses/data-science-full-time-hybrid/)[Data Science Part-time](https://moringaschool.com/courses/data-science-course-part-time/)"
+
+  utter_faq_duration:
+  - text: "Moringa offers flexible learning schedules that includes:\n1.The Full time Data Science course, which is an in-person program that takes 25 weeks.\n2.The Full time Hybrid Data Science course, which is a combination of oth in-person and virtual learning and takes 25 weeks\n3.Data Science Part-time course which is virtual and takes 35 weeks"
+
+  utter_faq_course_preriquisites:
+  - text: |
+      "All applicants need to meet the criteria outlined below to gain admission and succeed in the 25-week program:
+        - All applicants must be 18 years and above and provide proof of ID/Passport.
+        - Basic understanding in math and statistics concepts .
+        - Have a university/college education (ongoing students or graduates are more likely to join).
+        - All applicants are required to complete the application process by taking a technical assessment test and pass.
+        - Have a laptop with the following specs (core i5 upwards, 8GB RAM, 500GB upwards of storage).
+        - Have stable internet access.
+        - We require all our students to have gone through high school as is required by law (TVET) 
+        and should be computer proficient
+        - All applicants are required to complete a technical assessment test and pass
+        Please follow the link below for more details on the Data Science Course prerequisites:
+        [Data Science Course Prerequisites](https://moringaschool.com/courses/data-science-course/)"
+
+  utter_faq_hardware_requirement:
+  - text: "For hardware requirements, a laptop in good condition is required with the following specs:\ncore i5 upwards, 8GB RAM, 500GB upwards of storage.\nFor successful undertaking of the studies, a laptop is required with the following specs: core i5 upwards, 8GB RAM, 500GB upwards of storage. At this time, Moringa is not offering laptops as part of the course"
+
+  utter_faq_cost:
+  - text: "Data Science Fulltime costs-Ksh.174,000 and the Data Science Part time course costs- Ksh.200,000. \nInstallment options are available, whereby you can pay upto a maximum of 4 equal installments, with a minimum deposit of 10% of the total cost required for booking.\nFor more details, contact our admission team via the number - 020 7643 533"
+
+  utter_outofscope:
+  - text: "Mind asking your question again, the devs just made me smarter😉\nI only answer questions on Data Science. Are you intrested in that?🤔"
+
+  utter_faq_deferment:
+  - text: "Deferment is a temporary pause on your fee payments, and may be available on a case-by-case basis for students who are unable to continue their studies due to financial hardship, medical reasons, or other extenuating circumstances. It is available to students on a case-by-case basis, and there may be cost implications.\nTo request a deferment,please contact Moringa administrator through 020 764 3533."
+
+  utter_faq_payment:
+  - text: "We have two modes of fee payment\nOption 1:Mpesa\nPaybill - Business Number: 556459\nAccount: Student Name+Class\ne.g John Doe DSF-PT3\n\nOption2: Bank details\nBank: I&M\nBranch: Karen\nAcc name:MORINGA SCHOOL LIMITED\nAcc no: 00801051711810"
+
+  utter_faq_admission_timelines:
+  - text: "Our admission timelines vary with the cohort. For further details visit our [website](https://moringaschool.com/apply/data-science-part-time/) to apply.\n You can also contact our admissions office on 0712293878/0741493565 or email admissions@moringaschool.com"
+
+  utter_faq_location:
+  - text: "Moringa School Physical address is Ngong Lane, Ngong Lane Plaza, 1st Floor, Nairobi Kenya. At the moment, our offices are only in Nairobi. Moringa is easily accesible using google maps using this [pin](https://www.google.com/maps/dir/-1.3075872,36.9026305/moringa+school/@-1.3119325,36.7613703,12z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x182f1a6bf7445dc1:0x940b62a3c8efde4c!2m2!1d36.7846067!2d-1.3004862?entry=ttu)."
+
+
+  utter_faq_accomodation:
+  - text: "Moringa School does not offer accommodation.Student hostels & houses for rent are available within the environs, based on one's preference."
+
+  utter_faq_capstone_project:
+  - text: " In the final Phase of learning (Phase 5), learners will carry out the Capstone project as the final project. Learners work individually or in groups to apply the technical and soft skills training and knowledge.\nStudents are required to create a large-scale data science and/or machine learning project.\nThis final project provides an in-depth opportunity for you to demonstrate your learning accomplishments."
+
+  utter_faq_career_opportunities:
+  - text: "Career opportunities range from data analyst positions to specialized roles like machine learning engineer or even managerial positions.\nData scientist salaries are competitive, varying by experience and location, but with tech hubs       and major companies leading the way in hiring. At the core, data scientists are tasked with deriving actionable insights from vast datasets, making them invaluable assets in today's data-driven world"
+
+  utter_faq_Moringa:
+  - text : |
+       "Moringa School is a multi-disciplinary learning-accelerator committed to closing the skills-gap 
+       in Africa’s job markets by delivering transformative tech-based learning to high-potential
+       jobseekers; and on graduation connecting them to local and international employers who 
+       desire high-quality tech talent.
+       Our mission is To build talent and opportunities through transformative tech-based learning experiences.
+       Our vision is A world in which anyone can create their future"
+
+
+  utter_faq_certificate:
+  - text: "Yes, you will receive a TVET accredited certificate upon successful completeion of the program. The certificates are ready 2 weeks after your graduation.\nFeel free to post your accomplishment on LinkedIn or a platform of your choice as you never know which recruiter is watching.\nNote however the certificate is issue once, so take care of it."
+
+  utter_faq_contact_us:
+  - test: "Please find our contact details below, for more information:\nGeneral Inquiries: 020 500 2167\nContact@mornigaschool.com\nCorporate Inquiries: +254 738 368 319\nCorporate@moringaschool.com\nAdmissions Inquiries: 020 7643 533\nAdmissions@moringaschool.com\nWhatsApp Inquiries: +254 712 293 878\nFacebook | LinkedIn | Twitter | YouTube @moringaschool\nWebsite: www.moringaschool.com\nWe are open from 8:00 a.m to 5:00 p.m Weekdays"
+
+
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+
+
+
+actions:
+  - action_save_user_input

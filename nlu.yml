@@ -1,0 +1,921 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+    - Niaje
+    - Vipi
+    - Yoh
+    - Whatsup?
+    - Sasa
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - see you around
+    - bye bye
+    - see you later
+    - Wazii
+    - Kesho
+
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+    - Who are you?
+    - Jitambulishe
+
+
+- intent: faq_application
+  examples: |
+    - How do I apply?
+    - How do I enroll?
+    - Do I need to partake in an assessment test?
+    - Who is eligible to join the Data Science Course?
+    - What is the application deadline?
+    - Can I apply online?
+    - Are there prerequisites for joining the course?
+    - When will I know if I'm accepted?
+    - How long does the admission process take?
+    - What documents do I need to submit?
+    - Is there an age limit for applicants?
+    - Can international students apply?
+    - Do I need a recommendation letter?
+    - Are there interviews as part of the admission process?
+    - I missed the last intake, when's the next one?
+    - Is there a waiting list if I don't get in this time?
+    - How do I apply for the data science program at Moringa School?
+    - What qualifications do I need to apply?
+    - What are the admission requirements for Moringa School's data science program?
+
+
+- intent: faq_course_content
+  examples: |
+   - What topics are covered in the Data Science course?
+   - What are the learning objectives of the Data Science course?
+   - What are the key skills that students will learn in the Data Science course?
+   - What are the different modules of the Data Science course?
+   - What are the prerequisites for the Data Science course?
+   - What are the course materials for the Data Science course?
+   - What are the assignments and assessments for the Data Science course?
+   - Is the Data Science course project-based?
+   - What are the different types of projects that students can work on in the Data Science course?
+   - What is the capstone project for the Data Science course?
+   - What are the grading criteria for the capstone project?
+   - How many modules are there?
+   - Are there exams or projects alone?
+   - What does the capstone project entail?
+   - Can you tell me about the course syllabus?
+   - What topics are covered in the data science course?
+   - I'd like to know more about the modules.
+   - What's included in the curriculum?
+   - Do we have tests in this course?
+   - Is there a final project or examination?
+   - What will I be learning in this course?
+   - What subjects are part of the course?
+   - How is the course structured?
+   - Tell me about the coursework.
+   - Can you provide an overview of the course topics?
+   - What kind of projects will I be doing?
+   - How detailed is the course content?
+   - Are there any practical assignments?
+   - What does the final project look like?
+   - I'm curious about the course breakdown.
+   - Will there be any exams during the course?
+   - How many units or topics are in the course?
+   - What can I expect from the capstone?
+   - Tell me more about the curriculum of the data science program at Moringa School.
+   - What programming languages and tools are taught in the data science program?
+   - Is there a capstone project or final assignment in the data science program?
+   - Can you describe the hands-on projects and practical experiences students can expect?
+   - What types of assessments and evaluations are used in the program?
+   - Are there opportunities for students to collaborate on group projects?
+   - What will I learn?
+   - Is there machine learning in Moringa?
+   - Can you provide a list of specific data analysis techniques covered in the programs coursework?
+   - Are there any courses dedicated to data visualization in the data science program?
+   - what statistical methods and models are tought as part of the curriculum?
+   - Are there any ethics or responsible data science component in the coursework?
+   - Can you tell me about the database systems and technologies that students will learn about?
+   - Are there any courses focused on big data technologies and processing?
+   - How are machine learning algorithms and techniques integrated into the programs course work?
+   - Are there opportunities for students to work on real-world data science projects or case studies?
+   - Can you describe the typical structure of a data science course, including lectures, labs and assignments?
+   - Are there any advanced or specialised courses in the areas like natural language processing?
+   - Do you cover Sql in the course?
+   - Which areas of study are included in the Advanced Data Analytics module?
+   - What subjects does the Data Science course encompass?
+   - Do you have a course outline
+   - What do I expect to learn from the entire course?
+   - Do you teach R
+   - How many units are in the course?
+   - Do you offer sql
+   - Do you offer r
+   - What content is covered in the Data Science course?
+   - What is the course outline?
+   - How many modules are we covering?
+   - What are the specific modules?
+   - What is the course module
+   - What are the key topics of empahise for Data science in Moringa school
+   - How many times a week do we cover content
+   - Is NLP among one of the topic covered in data science course?
+   - What are the course units to be covered?
+   - Are there any additional workshops, events, or resources available to enhance students' learning experience?
+   - How does Moringa School stay up-to-date with industry trends and ensure the curriculum remains relevant?
+   - What are some of the critical topics that is covered in the course that is needed in the data science world out there? 
+
+
+- intent: faq_financial_aid
+  examples: |
+    - Is financial aid available?
+    - Are there any scholarships available?
+    - Can I get a loan?
+    - How do I apply for financial assistance?
+    - How can I be financed for studies?
+    - What are the financing options?
+    - Do you offer any discounts or grants?
+    - Can I get a tuition waiver?
+    - What's the process to apply for a scholarship?
+    - Are there payment plans available?
+    - How much financial aid can I receive?
+    - Are there any external funding sources?
+    - What's the deadline for financial aid applications?
+    - Can international students apply for financial aid?
+    - Do you have partnerships with banks for student loans?
+    - Are there any merit-based scholarships?
+    - How is the financial aid amount determined?
+    - I can't afford the fees, what can I do?
+    - Is there a possibility of a fee waiver?
+    - Do you have tie-ups with loan providers?
+    - Can I work part-time to finance my studies?
+    - Who can qualify to be sponsered?
+    - how can I apply for Scholarship?
+    - Who can qualify for the scolarship?
+    - What financial aid options are available for graduate students?
+    - How do I apply for a student loan, and what are the interest rates?
+    - Are there work-study programs available for students to earn money while studying?
+    - Can I set up a payment plan for tuition, and what are the terms?
+    - What is the timeline for submitting financial aid documents for admission?
+
+
+- intent: faq_learning_mode
+  examples: |
+    - Describe the classroom structure for the Data Science course.
+    - Do you have part-time classes?
+    - Are your classes online?
+    - What is the learning format, and is the program available online or only on-campus?
+    - Do you offer remote learning courses?
+    - Can I take this course from home?
+    - Are there any in-person sessions?
+    - Is this a virtual course?
+    - Do you provide any offline modules?
+    - How are the lessons delivered?
+    - Can I attend classes on weekends?
+    - Is this course fully online or is there a physical presence required?
+    - What's the mode of instruction for this course?
+    - Are there live sessions or pre-recorded lectures?
+    - How flexible is the learning mode?
+    - Do you have evening classes for working professionals?
+    - Is it possible to attend this course remotely?
+    - How is the online learning experience for this course?
+    - Do I need to come to the campus for any sessions?
+    - What are the options for attending the course?
+    - What is the learning format, and is the program available online or only on-campus
+    - Can I take the data science program on a part-time basis, or is it only available full-time?
+    - Do you offer distance learning?
+    - Is the class physical?
+    - How do you have classes?
+    - Is it online?
+    - Is Moringa full time?
+    - Are classes held everyday?
+    - Online and in school?
+    - How are the students going to attend classes?
+    - Online?
+    - Full Time/Part-time and In-Person/Online
+    - Are there any on-campus resources or support services for online students?
+    - Can I attend some classes in person and others online in the same semester?
+    - How do I access course materials and assignments for online classes?
+    - Are there weekend classes?
+    - Is this course fully offered online?
+    - Do we have weekend classes for the part time group?
+    - Are each student assisgned advisor/mentor?
+    - Do you offer hybrid classes? Partly few hours during the day and evening?
+    - What time are the classes?
+    - Is there an online option for the program?
+    - Do you offer online classes for this course? 
+    - Are part-time classes available?
+    - Do you offer full time classes?
+    - Does the parttime class get to go to school on some days?
+    - Do you offer part-time classes in the evening?
+    - Do you offer hybrid classes?
+    - How many modes of learning do you offer?
+    - What is the mode of learning? 
+    - Does the mode include lectures from Moringa staff or it’s self paced with videos as a guide?
+    - Does this course offer blended learning (both onsite and virtual)?
+    - Is hybrid learning an option? 
+    - What platform do you use for online classes?
+    - Are there part time classes and at what time 
+    - Are classes virtual?
+    - Any evening classes
+    - How are your classes structured?
+
+
+- intent: faq_duration
+  examples: |
+    - How long does the program last?
+    - How long is each module?
+    - What is the timeframe of the course?
+    - Can you tell me the duration of the entire course?
+    - How many weeks or months is the program?
+    - What's the length of the Data Science course?
+    - Over what period is the course spread out?
+    - How much time will I need to commit to finish the course?
+    - What's the total number of hours for the course?
+    - How many days does it take to complete the program?
+    - Is this a crash course?
+    - In how many months will the course be completed?
+    - How long are the classes each day?
+    - What's the estimated completion time for the course?
+    - Tell me about the course's timeline.
+    - How extensive is the program?
+    - Over how many semesters is the course?
+    - How many hours per week should I dedicate to this course?
+    - How long does the data science program at Moringa School typically last?
+    - How long does a course go for?
+    - What is the overall time it takes to complete the course?
+    - How long does it take to be through with this course?
+    - How long does the Data Science Course take?
+    - How long DS?
+    - Length of Data Science Course?
+    - How long is the ds course?
+    - How long will it take to finish Data science?
+    - How long is moringa?
+    - How long does a course go for?
+    - What is the overall time it takes to complete the course?
+    - How long does it take to complete this course?
+    - How long does it take to be through with this course?
+    - How long do the courses take to complete?
+
+
+
+
+- intent: faq_course_preriquisites
+  examples: |
+    - What qualifications should one have?
+    - What if I am not familiar with programming at all?
+    - What if I have no background in statistics?
+    - Do I need prior coding experience to enroll?
+    - Are there any specific skills I should have before joining?
+    - What's the recommended background for this course?
+    - Do I need any prior knowledge in data analysis?
+    - Are there mandatory skills or knowledge to start this course?
+    - I'm new to data science, can I still join?
+    - What does it take to join Moringa?
+    - What are the entry requirements for the Data Science course?
+    - Is there a prerequisite skill set for this program?
+    - How much programming should I know before starting?
+    - What kind of educational background is required?
+    - I haven't done any coding before, can I still apply?
+    - Are there any courses or topics I should be familiar with beforehand?
+    - Do you require any certifications or degrees to enroll?
+    - What's the basic knowledge needed for this course?
+    - How prepared should I be before starting the course?
+    - I don't have a tech background; will that be a problem?
+    - Is this course suitable for beginners or those with some experience?
+    - Do I need prior coding experience to enroll in the data science program?
+    - Are there any prerequisites or recommended skills for applicants?
+    -	Requirements for joining Data Science 
+    -	what is needed from me  to join Data Science class
+    -	What are the requirements for me to join DS?
+    -	Are there any specific requirement for joining  DS
+    -	What do I need to know before joining DS
+    -	What do you need for the data science course?
+    -	What do you need to do for the ds course?
+    -	What are the requirements to join DS
+    -	Do I need Knowledge in python for me to join DS?
+    -	What are the qualifications to join your Data Science course?
+    - Should i be a coding guru to survive the course?
+    - Do i require any prior certification to enrol in the program?
+    - Do I need to have a background in mathematics and computer science to take this course? 
+    - Do I require proficiency in ICT?
+    - What is the qualification for me to be admitted?
+    - Do I need a software background to enroll?
+    - Which backgrounds are a requirement for joining the course?
+    - Can non kenyans apply for the course?
+    - Are there free available short courses from Moringa that can give one an insight of the programme?
+    - Is familiarity with any specific programming languages mandatory for admission into the Data Science program?
+
+
+
+- intent: faq_hardware_requirement
+  examples: |
+    - What sort of laptop should I have?
+    - Can I use a 2GB RAM laptop?
+    - What are the hardware specifications needed for the course?
+    - Do I need a high-end computer for this course?
+    - What's the minimum RAM requirement for the course?
+    - Are there any specific computer requirements?
+    - I have an old laptop, will it suffice?
+    - What kind of computer setup is recommended?
+    - Do I need a particular graphics card for the course?
+    - Can I use my tablet for the course or do I need a laptop?
+    - Is there a list of technical specifications for the course?
+    - How powerful should my laptop be for the data science course?
+    - I have a basic laptop, is that okay?
+    - Are there any software or hardware prerequisites?
+    - What computer processing speed do you recommend?
+    - Does the course require any specific hardware configurations?
+    - Will I need additional storage or memory upgrades?
+    - How much disk space is recommended for the course?
+    - Is a specific brand or type of laptop recommended?
+
+
+- intent: faq_cost
+  examples: |
+   - How much does the data science program cost?
+   - Is there a price difference between remote learning and in-person learning?
+   - Can I pay in installments?
+   - What's the tuition for the course?
+   - Are there any hidden fees I should know about?
+   - How much will I need to invest in the entire course?
+   - Do you have any scholarships or discounts available?
+   - Is the cost for the program all-inclusive?
+   - What's the fee structure for the course?
+   - Do you have early bird pricing?
+   - Can I get a breakdown of the costs?
+   - How is the pricing compared to other similar courses?
+   - What's the total cost including materials and other resources?
+   - Are there additional costs apart from the tuition fee?
+   - Fee for Data Science 
+   - How much does it cost to undertake a course in data science?
+   - How much is the data science 
+   - How much for data science
+   - how much does it cost for the entire course
+   - what is the total fee for the data science course
+   - What is the total fee for the DS course
+   - how much will it cost me for this course
+   - How much for DS
+   - How much does a DS course cost?
+   - How much does the Data Science course cost?
+   - How much do you pay for a DS?
+   - How much do you pay for Data Science?
+   - What's the total fee for data science?
+   - what's the total fee for DS?
+   - What is the breakdown for the Moringa School Installment plan
+   - Can I pay for the whole class? prep and core?
+   - How much does this course cost?
+   - How much is the total cost of the course based on payment plans?
+   - How much is the course?
+   - Are there any charges not included in the total cost? 
+   - What's the total fee amount?
+   - Please provide the fee structure
+   - Can i pay for the course in installments?
+   - What is the total cost of undertaking this course?
+   - What is the fees per semester?
+   - What is the cost of the program?
+   - How much will the course cost me?
+   - How much does it cost for part time students?
+   - How much does the entire course cost?
+   - What's the fees structure like? 
+   - Total course cost?
+   - Are there any additional costs, such as materials or software licenses, that students should be aware of?
+   - What is the cost implication to complete this course/program?
+   - Are there other additional cost to incur during course and after course completion that is not captured in fees?       
+
+
+- intent: faq_deferment
+  examples: |
+    - Can students defer before the program is completed?
+    - Are there cost implications when one defer?
+    - Can students defer during the program?
+    - Can one take a break during the program?
+    - Wha is the deferment process?
+    - What happens when my deferment period ends?
+    - Can I request multiple deferments during my academic program?
+    - Is deferment available for international students?
+    - How long can a deferment typically last?
+    - Can I drop out?
+    - How can I request a deferment for my studies?
+    - How can I request a deferment for my studies?
+    - What is deferment, and how does it work for students?
+    - What should I do if I have been admitted but need to defer my enrollment?
+    - Can students defer before the program is completed?
+    - Are there cost implications when one defers?
+    - Will i penalised if i defer?
+    - How much is the penalty for deferment?
+    - Can students defer during the program?
+    - Can one take a break during the program?
+    - What is the deferment process?
+    - Will I get a refund if I defer?
+    - You make an application for deferement?. 
+    - Is there an application for deferment?
+    - What is the period within which I am allowed to defer? 
+    - What happens when my deferment period ends?
+    - Can I request multiple deferments during my academic program?
+    - Is deferment available for international students?
+    - How long can a deferment typically last?
+    - How can I request a deferment for my studies?
+    - What is deferment, and how does it work for students?
+    - How can I postpone my enrollment in the Data Science course for a later date?
+    - What does the process of deferment entail?
+    - How long do I have a to wait after filling out deferment form?
+    - Is there a fee I  pay for deferment?
+    - Can i defer by word of mouth?
+    - If I had made  full payment at the beginning and I defer at some point, on resuming am I expected to make any payment? 
+    - What should I do if I've been admitted but need to defer my enrollment?
+    - Am i allowed to defer?
+    - What steps should i take before coming to the deferment conclusion?
+    - Is it possible to defer in the middle of a school year?
+    - Is one allowed to defer in case of financial challenges and for how long? 
+    - Is one allowed to defer in case of financial challenges?
+    - For how long can i defer? 
+    - How long can I defer my studies for?
+    - Can I be able to defer and for how many years can I defer?
+    - After deferring, am I allowed to join another cohort?
+    - How is the approval process for deferment?
+    - What is the criteria for deferment
+    - Can someone defer?
+    - What is the window period for deferring
+    - Taking a break from your course work?
+    - what's the deferment process like?
+    - can I defer during my course? 
+    - Is there an extra fee if you defer?
+    - What happens if I need a break? 
+    - If I had made  full payment at the beginning and I defer at some point, on resuming am I expected to make any payment? 
+
+
+- intent: faq_payment
+  examples: |
+    - Payment Methods for Moringa Courses
+    - How are fees paid?
+    - What is the payment plan
+    - How is the payment plan
+    - how can I pay
+    - how do I pay for a course
+    - Will I be able to pay through mpesa?
+    - Do you accept payments by Mpesa?
+    - Do you accept bank transfers?
+    - which options do you have as a mode of fees payment.
+    - Can I pay with PayPal?
+    - Can you pay with M-Pesa?
+    - How does the payment process work?
+    - How do you pay for the course
+    - What are the available payment methods?
+    - Is there installment options?
+    - Are there any financial aids or payment plans?
+    - Is there a refund policyin case I drop out?
+    - Can I lipa mdogo mdogo?
+
+
+
+
+
+- intent: faq_Moringa
+  examples: |  
+    - What is Moringa?
+    - Tell me about Moringa School.
+    - What does Moringa offer?
+    - Explain what Moringa is all about.
+    - Can you provide an overview of Moringa?
+    - Describe Moringa School's mission and vision.
+    - Is Moringa a coding bootcamp?
+    - How does Moringa School help students?
+    - What sets Moringa School apart from other educational institutions?
+    - What is the goal of Moringa School?
+
+
+- intent: faq_admission_timelines
+  examples: |
+    - When is the application deadline for the upcoming semester?
+    - Do the admission timelines vary for different academic programs or majors within the institution?
+    - What are the key dates and deadlines I should be aware of for the admission process?
+    - What are the admission timelines for international students?
+    - When does the program start and end?
+    - How long does it take to get feedback about my admission from the school?
+    - How long does it take to get admitted
+    - When are your intakes?
+
+
+
+- intent: faq_accomodation
+  examples: |
+    - Tell me about on-campus housing
+    - How do I apply for student housing?
+    - What are the accomodation options?
+    - Do you provide accommodation options for students?
+    - Is there on-campus housing available?
+    - Can you recommend nearby accommodation for students?
+    - What are the housing arrangements for students attending Moringa?
+    - Are there any affordable lodging options in the vicinity of the campus?
+    - Do you have any partnerships with local accommodations?
+    - Where can I find information about student housing?
+    - Is accommodation assistance provided for international students?
+    - Are there any dormitories or residence halls on campus?
+    - How can I arrange for housing while studying at Moringa?
+    - Are there any special accommodations for students with disabilities?
+    - Can you help me find temporary housing during the course?
+
+
+- intent: faq_location
+  examples: |
+    - Where are you located?
+    - Can you provide the GPS coordinates or latitude and longitude of your location?
+    - What is the proximity of your location to CBD?
+    - Are there any landmarks or notable places near your location that I can use for reference?
+    - Is public transport available?
+    - Do you have multiple branches or locations?
+    - Where is Moringa School located?
+    - Where is Moringa 
+    - Can you provide the address of Moringa School?
+    - What is the physical location of the campus?
+    - Where can I find Moringa School in Nairobi?
+    - What's the street address for Moringa School?
+    - Can you give me directions to Moringa School?
+    - In which city is the campus of Moringa School situated?
+    - What are the nearby landmarks to Moringa School?
+    - Is the school easy to find in Nairobi City?
+
+
+- intent: faq_capstone_project
+  examples: |
+    - What is a capstone project?
+    - Capstone?
+    - At what point is it done?
+    - How long does it take to complete capstone project?
+    - Is the capstone project optional?
+    - Can one substitute capstone with course units?
+    - Does capstone atract extra fees?
+    - Is capstone project virtual or in-person?
+    - What does the final project entail?
+    - Does the final project cover the full course content?
+
+
+
+- intent: faq_career_opportunities
+  examples: |
+    - what carrer opportunities can i get after completing the data science course?
+    - Which industries demand data scientists?
+    - How stable is a data science career?
+    - What data science career paths exist?
+    - what the expected data scientist salaries?
+    - what the Geographic variation in data science jobs?
+    - what the Core data scientist responsibilities?
+    - which Companies are hiring data scientists?
+   
+
+
+
+- intent: faq_certificate
+  examples:  |
+    - Will I receive a certificate upon completing the data science program?
+    - How long does it take to receive the certificate after completing the program?
+    - Is the certificate recognized or accredited by any industry associations?
+    - Can I request additional copies of my certificate if needed?
+    - Can I include the certificate on my LinkedIn profile or resume?
+    - Is the certificate suitable for framing, and can I order a physical copy?
+    - Are there any additional fees associated with receiving the certificate?
+    - Can I request a digital version of my certificate for online verification?
+    - Is there a process for validating the authenticity of the certificate for potential employers?
+    - Can I request a replacement certificate if the original is lost or damaged?
+
+
+
+
+- intent: faq_contact_us
+  exampples:  |
+    - What are the contact hours for the Moringa administrative office?
+    - How can I reach the admissions office for specific inquiries?
+    - Is there a dedicated email address for general inquiries?
+    - Are there specific phone numbers for different departments within the Moringa?
+    - Can I schedule an appointment to meet with an course advisor or counselor?
+    - How can I get in touch with the IT support team for technical issues related to online courses?
+    - Is there a specific contact for questions about housing or accommodation options?
+    - Can I reach out to instructors directly for course concerns or questions?
+    - How can I provide feedback or suggestions to improve Moringa’s services?
+    - Is there a chat or messaging platform where I can get real-time assistance from the college?
+ 
+
+
+
+- intent: outofscope
+  examples: |
+   - I am asking out of scope question
+   - what is 4 +3 =?
+   - can you tell me do you love me?
+   - i want to order a pizza
+   - i want to see your happy customers
+   - i will tame a mouse for you
+   - is John Lewis still married to you
+   - is it a wasteland full of broken robot parts?
+   - Can I get a hamburger?
+   - Can YouTube talk?
+   - Can you call me back ?
+   - Can you give me your datacenter's password
+   - Can you give me your datacenter's password?
+   - Can you make sandwiches?
+   - Can you please send me an uber
+   - Do I have to accept?
+   - Do you know Kevin Pelton
+   - Find nearest pizzahut
+   - Have we met before?
+   - HomeBase is advertised as a community. Is there a way to interact with other members of the community?
+   - How long does it take to set up a Rasa bot?
+   - I already told you! I'm a shitmuncher
+   - I am User
+   - I am an opioid addic
+   - I am an opioid addict
+   - I am hungry
+   - I am trying to build one, and did some research before, but I have not do hand-on work yet
+   - I can barely see this white text on light gray background ...
+   - I changed my mind
+   - I have installed it
+   - I ned a GP in 94301
+   - I need a GP in 94301
+   - I need a girl friend!
+   - I need to eat cake
+   - I wan to buy a plane
+   - I wanna marry you
+   - I want a new laptop
+   - I want book a hotel
+   - I want french cuisine
+   - I want pizza
+   - I want to die
+   - I want to order pizza
+   - I want to use pipe
+   - I will check
+   - I'm a shitmuncher
+   - Is Rasa really smart?
+   - Is this Goal-Oriented Chatbot?
+   - Is today saturday?
+   - Mail me the guide
+   - Make me a sandwich
+   - NLW
+   - Nice name
+   - Now?
+   - Pizza bot
+   - Recharge
+   - SEL ME SOMETHING
+   - The Try it out is not working
+   - The weather is good
+   - Today
+   - Try it out broken
+   - What day is it today?
+   - What did you eat yesterday?
+   - What do you prefer?
+   - What is todays date
+   - What is your hobbies?
+   - What makes you better than a human?
+   - What's 1 + 1?
+   - What's do YouTube do
+   - What's your backend system?
+   - Where am I right now?
+   - Where am I?
+   - Who ?
+   - Who are your customers
+   - Why don’t you answer?
+   - Why is my TRUST score set to 50 after I completed the registration process?
+   - Won't you ask me how I am?
+   - You'r blue.
+   - [Kristin](name), I want to marry you
+   - [german](language)?
+   - a tamed mouse will arrive at your doorstep in the next couple of days
+   - aRE YOU SINGLE
+   - again?
+   - alexa, order 5 tons of natrium chloride
+   - and make chicken noises into the phone
+   - are the newsletter worth the subscription?
+   - are u facebook
+   - are u, facebook?
+   - are you single?
+   - are you dev?
+   - are you russian?
+   - are you sick
+   - are you vegan
+   - better than you
+   - book a ticket
+   - but I just told you that :(
+   - but if rasa is open source why do you have a sales team
+   - buy one please
+   - buy groceries
+   - call me father
+   - can we keep chatting?
+   - can you book dinner
+   - can you cheer me up
+   - can you cook dinner
+   - can you give me a cup of coffee
+   - can you help me with the docs?
+   - can you help me with your docs
+   - can you help me with your docs?
+   - can you learn from our conversation?
+   - can you speak about politic ?
+   - can you understand ?
+   - cannot see
+   - chgfhgh
+   - chinese ok?
+   - colder
+   - common, just try
+   - connect to alexa
+   - custom service
+   - did i break you
+   - dinner
+   - do you believe in god?
+   - do you have a phone number?
+   - do you have your photo?
+   - do you know me
+   - do you know ras
+   - do you liek cheese?
+   - do you like football
+   - do you like movies
+   - do you sell vacuum robots?
+   - do you want to marry me?
+   - docs
+   - doctor
+   - everything
+   - example of a chatbot
+   - genocide
+   - get me a club mate
+   - give me a girl friend
+   - give me food
+   - go back
+   - google?
+   - great, I'd like to buy a house
+   - hang on let me find it
+   - have you ever seen Keith Reilly?
+   - help with Alma Abrams
+   - help with my life
+   - hey little mama let em whisper in your ear
+   - hey, I contacted you a couple of days ago but didn't get any response, any news?
+   - how
+   - how about NYC
+   - how are Alicia Jackson's cats doing?
+   - how it compares to alexa
+   - how long have you been online?
+   - how long will the next version will launch?
+   - how many lines of codes
+   - how much is 10 + 89 ?
+   - how much is 10 + 89
+   - how to get rasa studio
+   - how to go to newyork ?
+   - i am hungry
+   - i am hungry, what should i do?
+   - i am not a developer but need this for business
+   - i am qq
+   - i can't deal with _your_ request
+   - i do not care how are you
+   - i hope you will be better
+   - i immediately need help with implementing the coolest bot you can imagine
+   - i m looking for job
+   - i told you already
+   - i wanna party
+   - i want a non dripping ice cream
+   - i want caffe
+   - i want food
+   - i want good flycam
+   - i want more of you in my life!
+   - i want pizza
+   - i want pizza!!
+   - i want to book a hotel
+   - i want to buy a roomba for my grandson
+   - i want to eat
+   - i want to find new friends
+   - i want to find out what you can build with rasa
+   - i want to fly
+   - i want to grab lunch
+   - i want to know current situtation in pakistan
+   - i want to order a pizza
+   - i want to see your happy customers
+   - i will tame a mouse for you
+   - is John Lewis still married to you
+   - is it a wasteland full of broken robot parts?
+   - is it allow to
+   - is rasa a studio?
+   - is rasa any good
+   - is that any of your business
+   - isn't the newsletter just spam?
+   - it's a pity
+   - im hungry
+   - license
+   - ljljl
+   - lunch
+   - lunch??
+   - machine learning
+   - mail me the steps
+   - mascot means?
+   - more
+   - mountain
+   - my name k
+   - no wait go back i want a dripping ice cream but a cone that catches it so you can drink the ice cream later
+   - offer me lunch
+   - oh my god, not again!
+   - oh wait i gave you my work email address can i change it?
+   - ok one then
+   - on wiche nlp based system are you build?
+   - only that?
+   - order good
+   - order pizza
+   - personal or work?
+   - pizza
+   - please help with my ice cream it's dripping
+   - please hjave lunchj
+   - please hurry, i have deadline in two weeks to deliver the bot it is for very big company
+   - please play music
+   - rasa topics
+   - really? you're so touchy?
+   - refresh
+   - region with no. of records
+   - remember my name
+   - search wikipedia
+   - shitmuncher
+   - show me a picture of a chicken
+   - silly bot
+   - sing me a song
+   - so, I'm helping right now to training you?
+   - some thing else
+   - someone call the police i think the bot died
+   - sorry, i cannot rephrase
+   - sudo make me a sandwich
+   - tell me about yourself
+   - tell me more about next best action
+   - that doesn't sound like a joke
+   - that link doesn't work!
+   - the one that is better than you
+   - tricked  ya
+   - turn off my stove
+   - provide a recipe
+   - recipe
+   - wait a bit i am still reading
+   - what about wheather
+   - what are contextual AI assistants and how different are they from chatbots?
+   - what are you doing now?
+   - what are your uses for universities
+   - what did you eat for lunch?
+   - what do oyu think about siri?
+   - what do you think abou siri?
+   - what do you think about Stanley Ramirez?
+   - what do you think of alexa
+   - what does your soul feel my friend
+   - what doing
+   - what else?
+   - what films do you like
+   - what i do after cd starter-pack-rasa-stack?
+   - what is a discourse?
+   - what is a mascot
+   - what is adlingo
+   - what is differance between bot and mascot?
+   - what is evolution ?
+   - what is google rcs
+   - what is machine learning
+   - what is nice?
+   - what is the capital of delhi
+   - what is the capital of india
+   - what is the current petrol price
+   - what is the day ?
+   - what is the real use case where we can use this one
+   - what is your address?
+   - what is your purpose
+   - what lnu mean?
+   - what the latest news ?
+   - what you ate today?
+   - what's 5 + 5
+   - what's a newsletter?
+   - what's gingerale
+   - what's your wife doing this weekend
+   - whats that
+   - whats the sign
+   - when is the next train is coming?
+   - where do i get install files for mac?
+   - where is Oslo?
+   - where is mexico?
+   - wheres the party?
+   - which city are you talking about?
+   - which email
+   - which email should i send to ?
+   - which file is created first while developing chat bot
+   - which is the LNU asynchronism ?
+   - which kind
+   - who are the engineers at rasa?
+   - who are they?
+   - who is [Sharon Zeches](name)
+   - who is the MD of samsung bangalore ?
+   - who is the president of Kenya?

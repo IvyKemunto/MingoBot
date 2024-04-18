@@ -166,7 +166,7 @@ https://github.com/IvyKemunto/MingoBot/assets/167242964/ddecd240-8445-4617-9a9c-
 
 
 
-The above videos show user interactions with mingobot.
+*The above videos show user interactions with mingobot.*
 
 # Conclusion 
 Moringa School is an institution which is very big on matters of feedback. MingoBot is a solution that enhances this two-way communication channel, in a split of a second. Being readily available, to provide consistent assistance to current students, potential students, parents and other interested parties is very vital. 
